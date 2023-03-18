@@ -11,3 +11,7 @@ The code for each solution is in its own folder (e.g. code for day 1 is in `"Day
 ## How to run
 
 Execute `./run <day>` where `<day>` is the day of the problem. For example. run `./run 1` to execute the solution for the first day.
+
+## Solutions
+
+-   [Day 1: Calorie Counting](/Day%201/README.md)
