@@ -27,5 +27,5 @@ case "$1" in
     ;;
 esac
 
-tsc "$TARGET/index.ts" --outDir "$TARGET/build/"
+tsc "$TARGET/index.ts" --outDir "$TARGET/build/" --lib "ES2015"
 node "$TARGET/build/index.js"
