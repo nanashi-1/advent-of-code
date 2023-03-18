@@ -69,3 +69,15 @@ Steps:
 -   Split `splittedSplittedInput` and iterate through it.
 -   Add the current calorie to `sum`
 -   Store `sum` to `largest` if it is larger.
+
+### Part 2
+
+It is mostly the same with part one with a few tweaks. I used a list of numbers here where the last item is the largest and the first is the third largest.
+
+``` javascript
+// Push a large number - 23
+[12, 16, 20] // Before
+[16, 20, 23] // After
+[20, 22, 23] // After pushing 22
+[21, 22, 23] // After pushing 21
+```
