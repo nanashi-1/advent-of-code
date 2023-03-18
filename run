@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# the script to be run, this will change depending on the target day
+TARGET=""
+
+# change the target script depending on the day
+case "$1" in
+    1)
+        TARGET="Day 1"
+    ;;
+    # when the target day is not specified
+    "")
+        echo "Target day is not specified (run the command like this: \`./run 1\`, where \`1\` can be change to any day)"
+        exit 1
+    ;;
+    # show help
+    -h | --help)
+        echo "Usage: ./run day-number <--help | -h>"
+        echo "Options:"
+        echo -e "\tday-number\tthe target day"
+        echo -e "\t-h --help\tshow this prompt"
+        exit 0
+    ;;
+    *)
+        echo "$1, is not a day included in here"
+        exit 1
+    ;;
+esac
+
+tsc "$TARGET/index.ts" --outDir "$TARGET/build/"
+node "$TARGET/build/index.js"
