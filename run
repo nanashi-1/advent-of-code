@@ -8,6 +8,9 @@ case "$1" in
     1)
         TARGET="Day 1"
     ;;
+    2)
+        TARGET="Day 2"
+    ;;
     # when the target day is not specified
     "")
         echo "Target day is not specified (run the command like this: \`./run 1\`, where \`1\` can be change to any day)"
