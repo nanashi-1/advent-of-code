@@ -15,3 +15,5 @@ Execute `./run <day>` where `<day>` is the day of the problem. For example. run 
 ## Solutions
 
 -   [Day 1: Calorie Counting](/Day%201/README.md)
+
+-   [Day 2: Rock Paper Scissors](Day%202/README.md)
